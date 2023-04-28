@@ -1,2 +1,2 @@
 # RockPaperScissors
-    - on console rock paper scissors game without UI
+    - on console rock paper scissors game with UI
