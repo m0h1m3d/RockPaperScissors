@@ -66,6 +66,7 @@ li{
     background: rgb(109, 233, 109);
     border-radius: 10px;
     border: transparent;
+    cursor: pointer;
 }
 
 .play:hover{
@@ -102,6 +103,7 @@ li{
     /* background: green; */
     margin: 50px;
     font-size: 6rem;
+    transform: rotate(-270deg);
 }
 
 .cpu-sign{
@@ -110,6 +112,7 @@ li{
     /* background: yellow; */
     margin: 50px;
     font-size: 6rem;
+    transform: rotate(-90deg);
 }
 
 .weapons{
@@ -135,9 +138,10 @@ button.clicked{
     border: transparent;
     height: 30%;
     width: 15%;
-    font-size: 2rem;
     background: rgb(134, 40, 40);
     color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .paper{
@@ -145,9 +149,10 @@ button.clicked{
     border: transparent;
     height: 30%;
     width: 15%;
-    font-size: 2rem;
     background: rgb(155, 144, 144);
     color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
 }
 
 .scissor{
@@ -155,7 +160,65 @@ button.clicked{
     border: transparent;
     height: 30%;
     width: 15%;
-    font-size: 1.9rem;
     background: rgb(92, 92, 255);
     color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.mob{
+    font-size: 5rem;
+}
+
+
+@media screen and (max-width: 768px){
+    .main{
+        height: 50%;
+    }
+
+    header{
+        font-size: 1.7rem;
+        padding: 1rem;
+        margin: -90px 0 auto;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .play{
+        width: 20%;
+        font-weight: 700;
+    }
+
+    .weapons{
+        width: 100%;
+        gap: 20px;
+        margin: -50px auto;
+    }
+
+    .rock{
+        width: 33%;
+        font-size: 1.3rem;
+    }
+
+    .paper{
+        width: 33%;
+        font-size: 1.3rem;
+    }
+
+    .scissor{
+        width: 33%;
+        font-size: 1.1rem;
+    }
+
+    .result{
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    .mob{
+        font-size: 2rem !important;
+    }
+
 }

@@ -7,6 +7,7 @@ const playerSign = document.querySelector('.player-sign');
 const computerSign = document.querySelector('.cpu-sign');
 const result = document.querySelector('.result');
 const div = document.createElement('div');
+      div.classList.add('mob');
 
 let playerScore = 0,
     computerScore = 0;
@@ -44,7 +45,6 @@ function gameOver(){
         main.style.display = 'none';
         div.textContent = "Game Over! you win!";
         div.style.color = 'green';
-        div.style.fontSize = '5rem';
         body.appendChild(div);
     }
     else if(computerScore === 5){
@@ -52,7 +52,6 @@ function gameOver(){
         main.style.display = 'none';
         div.textContent = "Game Over! you lose!";
         div.style.color = 'red';
-        div.style.fontSize = '5rem';
         body.appendChild(div);
     }
 }
