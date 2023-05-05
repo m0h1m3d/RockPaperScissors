@@ -216,10 +216,10 @@ button.clicked{
 }
 
 @media screen and (max-width: 768px){
-   
-   .main{
-
-   }
+    .game{
+        height: 50%;
+        width: 94%;
+    }
 
     header{
     font-size: 2rem;
@@ -234,11 +234,21 @@ button.clicked{
    }
 
    .signs{
-    margin: 0 -2.6em;
-    width: auto;
-   }
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.5em;
+    }
+
+    .player-sign{
+        font-size: 5rem;
+    }
+
+    .cpu-sign{
+        font-size: 5rem;
+    }
 
    .weapons{
+    padding: 1rem;
     gap: 10px;
    }
 
@@ -258,8 +268,10 @@ button.clicked{
    }
 
    .result{
-    height: 50px;
-    font-size: 50px;
+    margin: 0 auto;
+    height: 50%;
+    width: 100%;
+    font-size: 1rem;
    }
 
    .reDiv{
@@ -269,12 +281,12 @@ button.clicked{
 
    .mob{
     margin-bottom: 3em;
-    font-size: 1.3rem;
+    font-size: 1rem;
    }
 
    .restart{
     font-size: 0.3em;
-    width: 50%;
+    width: 100%;
     height: auto;
    }
 
